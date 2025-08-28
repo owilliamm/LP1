@@ -1,3 +1,5 @@
+// Faça um programa que leia dois valores e exiba o maior valor lido.
+
 #include <stdio.h>
 
 int main() {
