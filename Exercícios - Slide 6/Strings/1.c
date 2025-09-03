@@ -8,18 +8,18 @@
 #include <stdio.h>
 
 int tamanho(char* str) {
-	int coisas = 0;
-	int i = 0;
-	while(str[i] != '\0') {
-		coisas++;
-		i++;
-	}
-	return coisas;
+        int caracteres = 0;
+        int iteracao = 0;
+        while(str[iteracao] != '\0') {
+                caracteres++;
+                iteracao++;
+        }
+        return caracteres;
 }
-
 
 int main() {
 	char palavra[100];
+	printf("Escreva uma palavra\n");
 	scanf("%s", palavra);
-	printf("%d", tamanho(palavra));
+	printf("Tamanho: %d", tamanho(palavra));
 }
