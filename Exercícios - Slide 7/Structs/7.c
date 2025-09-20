@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-struct cartaodevoo {
+struct Cartaodevoo {
 	char nomepassageiro[20];
 	char origem[20];
 	char destino[20];
@@ -15,7 +15,7 @@ struct cartaodevoo {
 	int numeroassento;
 };
 
-void preenche(struct cartaodevoo* Pessoa) {
+void preenche(struct Cartaodevoo* Pessoa) {
 	printf("Nome do passageiro: "); scanf("%s", Pessoa->nomepassageiro);
 	printf("Numero do voo: ");      scanf("%d", &Pessoa->numerovoo);
 	printf("Origem: ");             scanf("%s", Pessoa->origem);
@@ -24,7 +24,7 @@ void preenche(struct cartaodevoo* Pessoa) {
 }
 
 int main() {
-	struct cartaodevoo Passageiro;
+	struct Cartaodevoo Passageiro;
 	preenche(&Passageiro);
 	printf("Nome: %s\n", Passageiro.nomepassageiro);
 	printf("Numero do voo: %d\n", Passageiro.numerovoo);
