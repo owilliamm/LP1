@@ -9,19 +9,19 @@
 #include <stdio.h>
 
 int main() {
-    signed char temps[5];
+    signed char temps[50];
     int leituras = 0; int soma = 0; int i;
 
-    for (i = 0; i<5; i++) {
+    for (i = 0; i<50; i++) {
         int temp;
         scanf("%d", &temp);
         temps[i] = (signed char)temp;
         soma += temps[i];
     }
 
-    float media = soma/5.0;
+    float media = soma/50.0;
 
-    for (i = 0; i<5; i++) {
+    for (i = 0; i<50; i++) {
         if (temps[i] > media) {
             leituras++;
         }
