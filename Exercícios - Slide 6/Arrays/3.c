@@ -18,7 +18,6 @@ void preenchequadrada(int arr[L][C], int lc) {
 }
 
 float determinante (int arr[L][C], int lc) {
-
     if (lc == 1) return arr[0][0];
     if (lc == 2) return arr[0][0]*arr[1][1]-arr[1][0]*arr[0][1];
 
@@ -37,7 +36,6 @@ float determinante (int arr[L][C], int lc) {
             }
             isub++;
         }
-
         int sinal = (i%2 == 0) ? 1 : -1;
         calculodet += sinal*arr[0][i]*determinante(submatriz, lc-1);
     }
