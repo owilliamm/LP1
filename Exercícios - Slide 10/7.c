@@ -1,3 +1,6 @@
+// Crie uma função que receba duas listas e retorne a concatenação das duas listas:
+//     struct Caixa* concatena (struct Caixa* l1, struct Caixa* l2);
+
 #include <stdio.h>
 #include <stdlib.h>
 

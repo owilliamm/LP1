@@ -1,3 +1,7 @@
+// Crie uma função que receba uma lista ordenada e um valor inteiro a ser inserido na lista.
+// A função deve retornar a lista modificada que deve se manter ordenada:
+//     struct Caixa* insere (struct Caixa* lista, int valor);
+
 #include <stdio.h>
 #include <stdlib.h>
 

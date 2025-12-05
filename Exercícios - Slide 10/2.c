@@ -1,3 +1,7 @@
+// Crie uma função que receba um ponteiro para uma caixa e percorra todas as caixas encadeadas, exibindo seus valores:
+//     void exibe (struct Caixa* caixa);
+// Teste o exemplo com a lista da questão 1.
+
 #include <stdio.h>
 #include <stdlib.h>
 

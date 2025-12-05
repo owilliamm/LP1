@@ -1,3 +1,6 @@
+// Crie uma função que receba uma lista e um valor inteiro e retorne se o valor está contido na lista:
+//     int contem (struct Caixa* lista, int valor);
+
 #include <stdio.h>
 #include <stdlib.h>
 

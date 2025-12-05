@@ -1,3 +1,7 @@
+// Crie uma função que receba uma lista e um valor inteiro a ser removido da lista (caso esteja contido na lista).
+// A função deve retornar a lista modificada, ou seja, um ponteiro para o seu primeiro elemento:
+//     struct Caixa* remove (struct Caixa* lista, int valor);
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,3 +1,6 @@
+// Crie uma função que recebe um ponteiro para uma lista e um valor inteiro e, se a lista contém esse valor, retira-o:
+//     int retira (struct Caixa* caixa, int valor);
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -56,4 +59,9 @@ int main() {
     c5->valor = 5; c5->prox = NULL;
 
     exibe(retira(c1, 9));
+    free(c1);
+    free(c2);
+    free(c3);
+    free(c4);
+    free(c5);
 }

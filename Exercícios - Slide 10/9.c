@@ -1,3 +1,5 @@
+// Começando de uma lista vazia (l=NULL), ler e incluir vários valores na lista até que seja digitado -1.
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,7 +9,7 @@ struct Caixa {
 };
 
 void exibe(struct Caixa* caixa) {
-    while (L != NULL) {
+    while (caixa != NULL) {
         printf("%d -> ", caixa->valor);
         caixa = caixa->prox;
     }
@@ -42,4 +44,6 @@ int main() {
         c1 = inserir(c1, x);
     }
     exibe(c1);
+
+    free(c1);
 }

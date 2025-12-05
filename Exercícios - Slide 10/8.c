@@ -1,3 +1,7 @@
+// Crie uma função que receba duas listas e retorne a concatenação das duas listas excluindo repetições:
+//     struct Caixa* concatena (struct Caixa* l1, struct Caixa* l2);
+// Assuma que não há repetições dentro das listas recebidas.
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -80,4 +84,11 @@ int main() {
     exibe(a1);
     exibe(b1);
     exibe(concatena(a1, b1));
+    
+    free(a1);
+    free(a2);
+    free(a3);
+    free(b1);
+    free(b2);
+    free(b3);
 }

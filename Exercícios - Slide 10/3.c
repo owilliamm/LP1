@@ -1,3 +1,12 @@
+// Faça as seguintes alterações na questão 1 (mantenha o código atual, fazendo alterações somente ao final do arquivo):
+// Mantenha um novo ponteiro cabeca que sempre aponta para a caixa inicial:
+//     struct Caixa* cabeca = ...
+// Remova a caixa no índice 2 (valor 9).
+// Exiba o valor das caixas (usando exibe).
+// Certifique-se de que o valor 9 não aparece mais.
+// Insire a caixa removida, no início da lista.
+// Exiba o valor das caixas (usando exibe).
+
 #include <stdio.h>
 #include <stdlib.h>
 

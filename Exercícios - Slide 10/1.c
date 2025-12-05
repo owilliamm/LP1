@@ -1,3 +1,8 @@
+// Considere a lista encadeada a seguir:
+//     1 -> 3 -> 9 -> 7 -> 5
+// Crie um programa que represente a lista acima encadeando valores do tipo struct Caixa.
+//     Cada valor acima deve estar em uma caixa própria (ex., c1, c2, etc.).
+
 #include <stdio.h>
 #include <stdlib.h>
 
