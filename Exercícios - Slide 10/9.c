@@ -43,7 +43,12 @@ int main() {
         if (x == -1) break;
         c1 = inserir(c1, x);
     }
+    
     exibe(c1);
 
-    free(c1);
+    while (c1 != NULL) {
+        struct Caixa* prox = c1->prox;
+        free(c1);
+        c1 = prox;
+    }
 }

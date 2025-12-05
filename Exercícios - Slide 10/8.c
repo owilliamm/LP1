@@ -83,12 +83,19 @@ int main() {
 
     exibe(a1);
     exibe(b1);
-    exibe(concatena(a1, b1));
+    struct Caixa* concatenado = concatena(a1, b1);
+    exibe(concatenado);
     
-    free(a1);
-    free(a2);
-    free(a3);
-    free(b1);
-    free(b2);
-    free(b3);
+    while (a1 != NULL) {
+        struct Caixa* prox = a1->prox;
+        free(a1);
+        a1 = prox;
+    }
+
+    while (b1 != NULL) {
+        struct Caixa* prox = b1->prox;
+        free(b1);
+        b1 = prox;
+    }
+    free(concatenado);
 }

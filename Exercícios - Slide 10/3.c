@@ -63,14 +63,15 @@ int main() {
     cabeca = c1;
 
     exibe(cabeca);
-    removido = remover(cabeca, 2);
+    removido = remover(c1, 2);
     exibe(cabeca);
     inserir(&cabeca, removido);
     exibe(cabeca);
 
-    free(c1);
-    free(c2);
-    free(c3);
-    free(c4);
-    free(c5);
+    while (c1 != NULL) {
+        struct Caixa* prox = c1->prox;
+        free(c1);
+        c1 = prox;
+    }
+    free(cabeca);
 }

@@ -33,9 +33,9 @@ int main() {
     printf("%d\n", contem(c1, 9));
     printf("%d\n", contem(c1, 78));
 
-    free(c1);
-    free(c2);
-    free(c3);
-    free(c4);
-    free(c5);
+    while (c1 != NULL) {
+        struct Caixa* prox = c1->prox;
+        free(c1);
+        c1 = prox;
+    }
 }

@@ -79,11 +79,13 @@ int main() {
     b3->valor = 101; b3->prox = b4;
     b4->valor = 55; b4->prox = NULL;
 
-    exibe(concatena(c1, b1));
+    struct Caixa* concatenado = concatena(c1, b1);
+    exibe(concatenado);
 
-    free(c1);
-    free(c2);
-    free(c3);
-    free(c4);
-    free(c5);
+    while (c1 != NULL) {
+        struct Caixa* prox = c1->prox;
+        free(c1);
+        c1 = prox;
+    }
+    free(concatenado);
 }

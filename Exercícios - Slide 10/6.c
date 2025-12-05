@@ -61,9 +61,9 @@ int main() {
     c1 = insere(c1, 192);
     exibe(c1);
 
-    free(c1);
-    free(c2);
-    free(c3);
-    free(c4);
-    free(c5);
+    while (c1 != NULL) {
+        struct Caixa* prox = c1->prox;
+        free(c1);
+        c1 = prox;
+    }
 }

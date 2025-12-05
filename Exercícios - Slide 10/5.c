@@ -63,6 +63,12 @@ int main() {
     c6->valor = 100; c6->prox = NULL;
 
     exibe(c1);
-    remover(c1, 9);
+    c1 = remover(c1, 9);
     exibe(c1);
+
+    while (c1 != NULL) {
+        struct Caixa* prox = c1->prox;
+        free(c1);
+        c1 = prox;
+    }
 }
